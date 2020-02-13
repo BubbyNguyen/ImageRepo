@@ -1,0 +1,57 @@
+<!-- app/views/photo/index.html.erb -->
+<div class ="nav-bar">
+  <h1 class = "homepage-header">Bobby's No Frills Image Repo!</h1>
+  <button class="open-button" onclick="openForm()">Upload</button>
+  <%= link_to "DESTROY LIBRARY", photo_path('all'), method: :delete, data: { confirm: 'Are you sure you want to get rid of all these precious memories?' }, class: 'standard-button' %>
+</div>
+
+<div class="form-popup" id="myForm">
+  <form class="uploads" method="POST" action="/photo/upload" enctype="multipart/form-data">
+    <%= token_tag %>
+    <div class="form-group">
+      <input type="file" name="image">
+    </div>
+    <div>
+      <label for="caption">Caption:</label>
+      <input type="text" name="caption">
+    </div>
+    <div class="upload-prompt-buttons">
+      <button type="button" class="standard-button" onclick="closeForm()">Cancel</button>
+      <input class="standard-button" type="submit" value="Upload">
+    </div>
+  </form>
+</div>
+
+<div class="outer-gallery">
+<% @posts.each do |post| %>
+  <div class="gallery">
+      <%= link_to image_tag(post.name), photo_path(post)%>
+    <div class="desc"><%= post.caption %></div>
+  </div>
+<% end %>
+</div>
+
+<script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+
+    //Pusher doesn't work for some reason? (Didn't have time to debug)
+var channel = pusher.subscribe('posts-channel');
+channel.bind('new-post', function(data) {
+let post_name = data.link;
+let post_caption = data.caption;
+let div = document.getElementById('post_section');
+let new_content = document.createElement("div");
+new_content.innerHTML = `
+<div class="gallery">
+      <a> <img src=${post_name} > </a>
+    <div class="desc">${post_caption}</div>
+</div>`;
+div.insertBefore(new_content, div.firstChild);
+});
+</script>

@@ -1,0 +1,15 @@
+<h1 class="view-header"><%= @post.caption %></h1>
+<div class="image-container">
+  <img src="<%= @post.name %>">
+  <div class="view-buttons">
+    <%= link_to "BACK", root_path, class: 'standard-button'%>
+    <%= link_to "DELETE", photo_path(@post), method: :delete, data: { confirm: 'Are you sure you would like to delete?' }, class: 'standard-button'%>
+    <%= link_to "DOWNLOAD", "download?id=#{@post.id}", class: 'standard-button' %>
+  </div>
+  <div  class="rekognition">
+    <h2>Photo Information</h2>
+    <%@resp.labels.each do |label|%>
+    <p> <%="#{label.name} - #{label.confidence.to_i} /"%></p>
+    <% end %>
+  </div>
+</div>

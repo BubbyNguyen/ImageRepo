@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dtd43ytdy
+  api_key: '877657927841577'
+  api_secret: vEms0UJxIfjRBD8m_PAG0wINgkE
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: dtd43ytdy
+  api_key: '877657927841577'
+  api_secret: vEms0UJxIfjRBD8m_PAG0wINgkE
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: dtd43ytdy
+  api_key: '877657927841577'
+  api_secret: vEms0UJxIfjRBD8m_PAG0wINgkE
+  enhance_image_tag: true
+  static_file_support: false

@@ -1,0 +1,157 @@
+// Place all the styles related to the Photo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+// app/assets/stylesheets/photo.scss
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.uploads{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  height: 100%;
+}
+
+.upload-prompt-buttons {
+  margin-top: 50px;
+}
+
+.uploads div {
+  display: block;
+  text-align: center;
+  margin:30px;
+}
+.images{
+  .post{
+    width: 500px;
+    border-radius: 10px;
+    border: 1px solid rgb(214, 210, 210);
+    margin-bottom: 20px;
+  }
+}
+.post-image{
+  width: 100%;
+}
+.post-caption{
+  padding-left: 20px;
+}
+
+.standard-button{
+  background-color: #333333;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.homepage-header{
+  width: 40%;
+  float:left;
+  margin:auto;
+}
+
+div.nav-bar{
+  width:100%;
+  text-align: center;
+  display:inline-block
+}
+
+button.open-button{
+  float:right;
+  margin: auto;
+  background-color: #333333;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+div.outer-gallery{
+  left: 50%;
+  margin-right: -50%;
+  width: 100%;
+}
+
+div.gallery {
+  margin: 2px;
+  border: 1px solid #ccc;
+  width: 32%;
+  text-align: left;
+  display: inline-block;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.form-popup {
+  background-color: lightblue;
+  display: none;
+  position:absolute;
+  top:65%;
+  left:50%;
+  width:700px;  /* adjust as per your needs */
+  height:200px;   /* adjust as per your needs */
+  margin-left:-350px;   /* negative half of width above */
+  margin-top:-200px;   /* negative half of height above */
+}
+
+.image-container {
+  height:50%;
+  width:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-container img {
+  height:100%;
+  width:100%;
+}
+
+.view-header {
+  text-align: center;
+}
+
+.view-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-buttons {
+  .standard-button {
+    margin:5px;
+  }
+}
+
+.nav-bar {
+  .standard-button {
+    float:right;
+    margin-right:10px;
+  }
+}
+
+.rekognition p {
+  display: inline-block;
+}
+

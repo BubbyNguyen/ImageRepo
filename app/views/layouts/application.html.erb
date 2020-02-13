@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ImageRepo</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+
+    <script>
+        var pusher = new Pusher('cbdccb08017eb8e66aa4', {
+            cluster: 'us2',
+            encrypted: false
+        });
+    </script>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
