@@ -29,3 +29,9 @@ SQLite3: 3.19.4
 -Download photos  
 -Image rekognition  
 -Single/All delete  
+
+## Potential Future Features
+-Include user protection
+-Bulk select and delete
+-Bulk select and upload
+-Better UI
