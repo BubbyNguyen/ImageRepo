@@ -5,7 +5,7 @@ Ruby: 2.7.0
 Rails: 6.0.2.1  
 SQLite3: 3.19.4  
 
-##Gems:
+### Gems:
 -aws-sdk  
 -cloudinary  
 -dotenv  
@@ -25,7 +25,7 @@ SQLite3: 3.19.4
 3. Go to the URL the console provides
 
 ## Features
--Upload photos
--Download photos
--Image rekognition
--Single/All delete
+-Upload photos  
+-Download photos  
+-Image rekognition  
+-Single/All delete  
