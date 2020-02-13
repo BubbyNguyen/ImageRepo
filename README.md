@@ -1,15 +1,15 @@
 # README: Bobby's No Frills Image Repo
 
-## This application is developed with Ruby on Rails
-Ruby: 2.7.0
-Rails: 6.0.2.1
-SQLite3: 3.19.4
+### This application is developed with Ruby on Rails
+Ruby: 2.7.0  
+Rails: 6.0.2.1  
+SQLite3: 3.19.4  
 
 ##Gems:
--aws-sdk
--cloudinary
--dotenv
--pusher
+-aws-sdk  
+-cloudinary  
+-dotenv  
+-pusher  
 
 ## Installation:
 1. Clone to computer using git
