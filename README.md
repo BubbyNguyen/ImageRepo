@@ -31,7 +31,7 @@ SQLite3: 3.19.4
 -Single/All delete  
 
 ## Potential Future Features
--Include user protection
--Bulk select and delete
--Bulk select and upload
--Better UI
+-Include user protection  
+-Bulk select and delete  
+-Bulk select and upload  
+-Better UI  
